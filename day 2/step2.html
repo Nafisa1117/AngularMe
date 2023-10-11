@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let commomman = {
+            title : "Bruce"
+        };
+        let addpower = function(power){
+            return function(hero){
+                return{
+                    title : hero.title,
+                    power : power
+                }
+            }
+        };
+        // let tempcommanman = addpower(7);
+        // commomman = tempcommanman(commomman);
+
+        commomman = addpower(7)(commomman);
+        console.log(commomman);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
